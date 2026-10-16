@@ -180,7 +180,12 @@ p {
     flex-wrap: wrap;
     display: flex;
     flex: 1;
+}
+
+.email input {
     border-radius: 999px;
+    border: none;
+    padding: 20px;
 }
 
 .email-btn {
@@ -219,17 +224,15 @@ FEATURES ↓
     font-size: 15px;
 }
 }
-.feature__logo--strip {
-    border-radius: 40px;
-    color:rgb(167, 166, 166);
+.feature__logo--strip img {
+    max-width: 100%;
+    border-radius: 50px;
+    opacity: 0.5;
     justify-content: center;
 }
 
-.feature__logo {
-    width: 10px;
-    max-width: 100px;
-    height: 10px;
-    object-fit: contain;
+.feature__logo img {
+    max-width: 100%;
 }
 
 
