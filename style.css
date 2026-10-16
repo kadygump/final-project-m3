@@ -166,8 +166,20 @@ header .row {
     justify-content: space-between;
 }
 
+h1 {
+    font-weight: bold;
+    color: black;
+}
+
 p {
     text-align: center;
+    padding: 40px;
+}
+
+.email {
+    flex-wrap: wrap;
+    display: flex;
+    flex: 1;
 }
 
 .email-btn {
