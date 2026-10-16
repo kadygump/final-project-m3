@@ -112,7 +112,7 @@ font-weight: bold;
     transform: translate(100%);
     transition: all 300ms ease;
 }
-}
+
 
 .modal__links {
     width: 100%;
@@ -180,6 +180,7 @@ p {
     flex-wrap: wrap;
     display: flex;
     flex: 1;
+    border-radius: 999px;
 }
 
 .email-btn {
@@ -189,7 +190,7 @@ p {
     color: white;
     padding: 12px 24px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 999px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
@@ -212,7 +213,28 @@ FEATURES ↓
     display: flex;
     flex-direction: column;
     align-items: center;
+    p {
+    color: rgb(167, 166, 166);
+    font-weight: bold;
+    font-size: 15px;
 }
+}
+.feature__logo--strip {
+    border-radius: 40px;
+    color:rgb(167, 166, 166);
+    justify-content: center;
+}
+
+.feature__logo {
+    width: 10px;
+    max-width: 100px;
+    height: 10px;
+    object-fit: contain;
+}
+
+
+
+
 
 
 /* 
