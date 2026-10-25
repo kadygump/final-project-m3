@@ -260,19 +260,24 @@ FEATURES ↓
 
 .feature {
     display: grid;
-    grid-template-columns: 40px 1fr;
-    column-gap: 12px;
+    grid-template-columns: 56px 1fr;
+    column-gap: 16px;
     width: 33.33%;
-    padding: 16px;
+    padding: 20px;
     box-sizing: border-box;
     text-align: left;
 }
 
 .feature > img {
-    width: 36px;
-    height: 36px;
-    grid-row: 1 / span 2;
+    width: 52px;
+    height: 52px;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    box-sizing: border-box;
+    object-fit: contain;
     grid-column: 1;
+    grid-row: 1 / span 2;
 }
 
 .feature__highlight {
