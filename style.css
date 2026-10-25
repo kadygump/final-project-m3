@@ -177,30 +177,42 @@ p {
 }
 
 .email {
-    flex-wrap: wrap;
+    width: 100%;
+    max-width: 448px;
+    height: 68px;
+    position: relative;
     display: flex;
-    flex: 1;
-    gap: 8px;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .email input {
-    border-radius: 999px;
+    width: 100%;
+    height: 100%;
+    border-radius: 500px;
     border: 2px solid #e2e8f0;
-    padding: 20px;
+    padding: 20px 192px 20px 32px;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .email-btn {
-    align-items: center;
-    display: inline-block;
+    position: relative;
+    z-index: 2;
+    margin: 8px;
+    height: calc(100% - 16px);
+    width: 160px;
+    border-radius: 500px;
     background-color: #6415ff;
     color: white;
-    padding: 12px 24px;
     text-decoration: none;
-    border-radius: 999px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    text-align: center;
-    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -239,12 +251,10 @@ FEATURES ↓
     padding: 70px;
 }
 
-.feature__highlight {
-
-}
-
-.feature__para {
-
+.feature__support {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -275,6 +285,14 @@ QUALITY WORK ↓
         span {
             color: #6415ff;
         }
+    }
+}
+
+.quality__work {
+    display: block;
+
+    .button {
+        background-color: #6415ff;
     }
 }
 
