@@ -252,9 +252,19 @@ FEATURES ↓
 }
 
 .feature__support {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     text-align: center;
+}
+
+.feature {
+    width: 33.33%;
+    padding: 16px;
+}
+
+.feature__para {
+    padding: 0;
 }
 
 
