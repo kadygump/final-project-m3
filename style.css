@@ -467,3 +467,15 @@ MOBILE RESPONSIVENESS ↓
         margin-bottom: 80px;
     }
 }
+
+@media (max-width: 900px) {
+    .feature {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .feature {
+        width: 100%;
+    }
+}
