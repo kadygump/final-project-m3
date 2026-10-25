@@ -494,3 +494,9 @@ MOBILE RESPONSIVENESS ↓
         width: 100%;
     }
 }
+
+.header__customers img {
+    width: 100%;
+    max-width: 500px;
+    opacity: 0.4;
+}
