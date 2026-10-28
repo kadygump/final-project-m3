@@ -345,6 +345,7 @@ QUALITY WORK ↓
 }
 
 .quality__work {
+    width: 50%;
  h3 {
 font-size: 15px;
 color: #6415ff;
@@ -379,6 +380,14 @@ STEPS ↓
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.step__img {
+    width: 50%; 
+}
+
+.step__text {
+    width: 50%;
 }
 
 
