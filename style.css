@@ -428,7 +428,11 @@ line-height: 1;
 }
 
 .step__para {
-opacity: 75%;
+color: #718096;
+font-size: 14px;
+margin-top: 12px;
+line-height: 2;
+font-weight: 500;
 }
 
 
