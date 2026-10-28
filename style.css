@@ -380,14 +380,50 @@ STEPS ↓
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 32px;
+}
+
+.section__tag {
+    color: #6415ff;
 }
 
 .step__img {
     width: 50%; 
 }
+.step__img img {
+    width: 100%;
+    height: auto;
+}
 
-.step__text {
+.steps__text {
     width: 50%;
+}
+
+.step__description {
+    margin-top: 48px;
+}
+
+.step__numbers {
+opacity: 30%;
+align-items: center;
+flex-direction: column;
+display: flex;
+unicode-bidi: isolate;
+box-sizing: border-box;
+font-weight: 600;
+font-size: 35px;
+}
+
+
+.step__title {
+font-size: 20px;
+font-weight: 600;
+color: #243e63;
+line-height: 1;
+}
+
+.step__para {
+opacity: 75%;
 }
 
 
