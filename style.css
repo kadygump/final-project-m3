@@ -172,8 +172,12 @@ h1 {
 }
 
 p {
-    text-align: center;
-    padding: 40px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#features .row__narrow > p {
+  text-align: center;
 }
 
 .email {
@@ -225,11 +229,7 @@ p {
     max-width: 600px;
 }
 
-header .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 /* 
 
@@ -702,6 +702,15 @@ MOBILE RESPONSIVENESS ↓
     #quality .row,
     #values .row {
         flex-direction: column-reverse;
+        .quality__work,
+.quality__work--img,
+.step__img,
+.steps__text,
+#values .row > div,
+.value__img {
+  width: 100%;
+  max-width: 448px;
+}
     }
     #steps .row,
     #testimonials .row {
@@ -724,6 +733,11 @@ MOBILE RESPONSIVENESS ↓
     main {
         margin-bottom: 80px;
     }
+    .pricing__title,
+#features h1 {
+  font-size: 32px;
+  line-height: 1.25;
+}
 }
 
 @media (max-width: 900px) {
