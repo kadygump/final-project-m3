@@ -852,13 +852,9 @@ header p {
 @media (max-width: 768px) {
   .quality__work,
   .quality__work--img,
-  .step__img,
-  .steps__text,
-  #values .row > div,
-  .value__img {
-    width: 100%;
-    max-width: 448px;
-  }
+  #quality .row,
+    #values .row {
+        flex-direction: column-reverse;
 }
 
 @media (max-width: 640px) {
@@ -1112,4 +1108,74 @@ header h1 {
 
 .value__name + .value__para {
   font-size: 16px;
+}
+
+/* HALF SCREEN */
+
+#features .row__narrow h1 {
+  letter-spacing: 0.025em;
+}
+
+@media (max-width: 1280px) {
+  header h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  header .container {
+    padding-top: 48px;
+  }
+
+  header .row {
+    gap: 24px;
+  }
+
+  header .row > div {
+    max-width: 512px;
+  }
+
+  .header__customers p {
+    margin-top: 48px;
+  }
+
+  .feature {
+    width: 50%;
+  }
+
+  #quality .row,
+  #values .row {
+    gap: 64px;
+  }
+
+  .quality__work h1,
+  .section__title,
+  .value__title {
+    font-size: 36px;
+    line-height: 1.25;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature__support {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 640px) {
+  .quality__work h1,
+  .section__title,
+  .value__title {
+    font-size: 30px;
+  }
 }
