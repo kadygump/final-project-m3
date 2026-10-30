@@ -852,9 +852,13 @@ header p {
 @media (max-width: 768px) {
   .quality__work,
   .quality__work--img,
-  #quality .row,
-    #values .row {
-        flex-direction: column-reverse;
+  .step__img,
+  .steps__text,
+  #values .row > div,
+  .value__img {
+    width: 100%;
+    max-width: 448px;
+  }
 }
 
 @media (max-width: 640px) {
