@@ -702,7 +702,58 @@ TESTIMONIALS ↓
     display: flex;
 }
 
+.testimonial__img {
 
+}
+
+.testimonial__description {
+
+}
+
+.testimonial__rating {
+
+}
+
+.testimonial__title {
+
+}
+
+.testimonial__para {
+
+}
+
+.testimonial__bottom {
+
+}
+
+.testimonial__profile {
+
+}
+
+.testimonial__details {
+
+}
+
+.testimonial__name{
+
+}
+
+.testimonial__role{
+
+}
+
+.testimonial__buttons{
+
+}
+
+.testimonial__button {
+
+}
+
+
+.divider {
+    
+}
 /* 
 
 START / CALL TO ACTION ↓
@@ -1284,3 +1335,14 @@ header h1 {
 .plan:nth-child(3) {
   border-top-color: #f56565;
 }
+
+.plan__middle {
+  border-top: 2px solid #e5e7eb;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+/* Divider color for the blue Business card */
+.plan:nth-child(2) .plan__middle {
+  border-color: #667eea;
+}
+
