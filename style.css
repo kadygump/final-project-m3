@@ -701,10 +701,12 @@ TESTIMONIALS ↓
 }
 
 .testimonial__img {
-width: 100%;
-max-width: 448px;
-box-sizing: border-box;
-overflow: clip;
+width: 60%;
+}
+
+.testimonial__img img {
+    width: 100%;
+    height: auto;
 }
 
 .testimonial__tag {
@@ -724,6 +726,7 @@ color: rgb(36, 62, 99);
 margin: 16px 0;
 letter-spacing: 0.025em;
 display: block;
+text-align: right;
 }
 
 .testimonial__title {
@@ -733,6 +736,7 @@ color: #4a5568;
     font-size: 1.25rem;
     font-weight: 700;
     display: block;
+    text-align: right;
 }
 
 .section__para {
@@ -741,6 +745,7 @@ color: #4a5568;
     color: #7c8ba1;
     line-height: 1.625;
     text-align: center;
+    text-align: right;
 }
 
 .testimonial__para {
@@ -750,14 +755,17 @@ margin-top: 1rem;
     line-height: 1.625;
     font-size: 16px;
     color: rgb(74 85 104);
+    text-align: right;
 }
 
 
 .testimonial__profile {
-flex-direction: column;
-align-items: center;
-display: flex;
+width: 60%;
+}
 
+.testimonial__profile profile {
+    width: 100%;
+    height: auto;
 }
 
 
