@@ -763,9 +763,10 @@ margin-top: 1rem;
 width: 60%;
 }
 
-.testimonial__profile profile {
-    width: 100%;
-    height: auto;
+.testimonial__profile img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
 }
 
 
@@ -787,6 +788,11 @@ display: flex;
     align-items: center;
 }
 
+.testimonial__img,
+.testimonial__content {
+    width: 50%;
+}
+
 
 
 /* 
@@ -802,6 +808,21 @@ START / CALL TO ACTION ↓
     overflow: hidden;
 }
 
+start__title {
+    color: #f7fafc;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    z-index: 2;
+}
+.start__title, .start__buttons {
+    width: 50%;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
 
 /* 
 
@@ -1391,3 +1412,15 @@ header h1 {
   color: inherit;
 }
 
+@media (max-width: 640px) {
+    .start__title {
+        font-size: 24px;
+    }
+}
+@media (max-width: 1024px) {
+    .start__title {
+        text-align: center;
+        width: 100%;
+        max-width: 512px;
+    }
+}
