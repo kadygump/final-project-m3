@@ -703,7 +703,7 @@ TESTIMONIALS ↓
 }
 
 .testimonial__img {
-width: 60%;
+width: 40%;
 }
 
 .testimonial__img img {
@@ -792,12 +792,11 @@ display: flex;
     align-items: center;
 }
 
-.testimonial__img,
 .testimonial__content {
-    width: 50%;
+    width: 60%;
 }
 
-.testimonial__rating {
+.testimonial__rating i {
     color: gold;
 }
 
@@ -814,7 +813,7 @@ START / CALL TO ACTION ↓
     overflow: hidden;
 }
 
-start__title {
+.start__title {
     color: #f7fafc;
     font-size: 30px;
     font-weight: 700;
@@ -854,7 +853,7 @@ div {
     background-color: #6415ff;
     color: #f7fafc;
     padding: 20px 40px;
-  border: none;
+  border: 2px solid #fff;
   border-radius: 500px;
   font-weight: 700;
   cursor: pointer;
