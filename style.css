@@ -484,16 +484,7 @@ VALUES ↓
 }
 
 .value__title {
-margin-top: 16px;
-margin-bottom: 32px;
-font-size: 30px;
-line-height: 1.25;
-font-weight: 900;
-color: rgb(36, 62, 99);
-margin: 16px 0;
-letter-spacing: 0.025em;
 display: flex;
-unicode-bidi: isolate;
 align-items: center;
 }
 
@@ -543,6 +534,13 @@ width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
+}
+
+value__img--wrapper i {
+    color: inherit;
+    font-size: 20px;
+    line-height: 1;
 }
 
 .value:nth-child(1) .value__img--wrapper {
@@ -1172,7 +1170,7 @@ header p {
 }
 
 .value__name {
-  margin-top: 24px;
+  margin-top: 0;
   margin-left: 12px;
 }
 
@@ -1286,9 +1284,6 @@ header h1 {
   margin: 16px 0;
 }
 
-.value__title {
-  margin: 16px 0 32px;
-}
 
 .step {
   margin-top: 48px;
@@ -1318,8 +1313,7 @@ header h1 {
 @media (max-width: 1024px) {
   header h1,
   .quality__work h1,
-  .section__title,
-  .value__title {
+  .section__title, {
     font-size: 30px;
     line-height: 1.25;
   }
@@ -1493,8 +1487,7 @@ header h1 {
   }
 
   .quality__work h1,
-  .section__title,
-  .value__title {
+  .section__title, {
     font-size: 36px;
     line-height: 1.25;
   }
@@ -1514,8 +1507,7 @@ header h1 {
 
 @media (max-width: 640px) {
   .quality__work h1,
-  .section__title,
-  .value__title {
+  .section__title, {
     font-size: 30px;
   }
 }
