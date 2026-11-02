@@ -492,8 +492,9 @@ font-weight: 900;
 color: rgb(36, 62, 99);
 margin: 16px 0;
 letter-spacing: 0.025em;
-display: block;
+display: flex;
 unicode-bidi: isolate;
+align-items: center;
 }
 
 
@@ -533,6 +534,27 @@ background-color: #6415ff;
 .value__img img {
 width: 100%;
     height: auto;
+}
+
+.value__img--wrapper {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value:nth-child(1) .value__img--wrapper {
+  background-color: #9ae6b4;
+}
+
+.value:nth-child(2) .value__img--wrapper {
+  background-color: #feb2b2;
+}
+
+.value__list {
+    display: flex;
 }
 
 
@@ -700,6 +722,7 @@ TESTIMONIALS ↓
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 40px;
 }
 
 .testimonial__img {
@@ -765,6 +788,9 @@ margin-top: 1rem;
 
 .testimonial__profile {
 width: 60%;
+display: flex;
+align-items: center;
+gap: 16px;
 }
 
 .testimonial__profile img {
@@ -793,11 +819,22 @@ display: flex;
 }
 
 .testimonial__content {
-    width: 60%;
+    width: 55%;
 }
 
 .testimonial__rating i {
     color: gold;
+}
+
+.testimonial__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial__button svg {
+    width: 20px;
+    height: 20px;
 }
 
 /* 
@@ -821,7 +858,8 @@ START / CALL TO ACTION ↓
     z-index: 2;
 }
 .start__title, .start__buttons {
-    width: 50%;
+    width: 100%;
+    text-align: center;
 }
 
 div {
@@ -837,6 +875,14 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.start__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
 }
 
 .start__button--btn {
@@ -910,6 +956,8 @@ a {
 .footer__bottom {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
 }
 
 .footer__logo {
@@ -917,7 +965,7 @@ a {
     align-items: center;
 }
 
-.footer__logo--img {
+.footer__logo img {
     height: 32px;
     width: 32px;
 }
@@ -930,6 +978,15 @@ a {
 .footer__socials {
     display: flex;
     align-items: center;
+    background-color: white;
+    letter-spacing: 10px;
+    padding: 8px;
+    width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__logo--text {
@@ -939,6 +996,8 @@ a {
     margin-left: 8px;
     letter-spacing: 0.05em;
 }
+
+
 
 
 /* 
