@@ -1033,23 +1033,30 @@ MOBILE RESPONSIVENESS ↓
     }
 }
 
-@media(max-width: 768px) {
+To avoid moving single braces around, it might be easier to replace a few complete blocks. The line numbers may have shifted after your edits, so you can also look for the selector names.
+
+In style.css, you could replace the whole @media (max-width: 768px) block, around lines 1038 to 1058, with this one, where each selector closes before the next one starts:
+
+@media (max-width: 768px) {
     #quality .row,
     #values .row {
         flex-direction: column-reverse;
-.step__img,
-.steps__text,
-#values .row > div,
-.value__img {
-  width: 100%;
-  max-width: 448px;
-}
     }
+
+    .step__img,
+    .steps__text,
+    #values .row > div,
+    .value__img {
+        width: 100%;
+        max-width: 448px;
+    }
+
     #steps .row,
     #testimonials .row {
         flex-direction: column;
         align-items: center;
     }
+
     #pricing .row {
         margin-top: 40px;
     }
@@ -1605,6 +1612,7 @@ header h1 {
     .start__container {
         padding: 80px 0;
     }
+}
 
     @media (max-width: 640px) {
     .start__title {
